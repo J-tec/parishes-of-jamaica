@@ -1,0 +1,30 @@
+/* parish-style.css */
+body {
+  background-color: #e6ffe6;
+}
+
+.header {
+  background-color: #87cefa;
+  padding: 20px;
+}
+
+.header h1 {
+  font-family: 'Impact', sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  color: white;
+  background: linear-gradient(90deg, green, gold, black);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.parish-info {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 20px;
+}
+
+.parish-image {
+  max-width: 100%;
+  height: auto;
+}
