@@ -1,29 +1,50 @@
-/* style.css */
-body {
-  background-color: #e6ffe6; /* Pale green background */
+/* Background Colors */
+.bg-sky-blue {
+    background-color: #87CEEB; /* Light blue like the sky */
 }
 
-.header {
-  background-color: #87cefa; /* Light blue like the sky */
-  padding: 20px;
-}
-
-.header h1 {
-  font-family: 'Impact', sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: white;
-  background: linear-gradient(90deg, green, gold, black);
-  -webkit-background-clip: text;
-  color: transparent;
+.bg-light-green {
+    background-color: #F0FFF0; /* Very pale green */
 }
 
 .bg-light-yellow {
-  background-color: #ffeb99; /* Light yellow color for navbar */
+    background-color: #FFEB3B; /* Light yellow */
 }
 
-.intro-text {
-  font-size: 1.2rem;
-  color: #333;
-  padding: 20px;
+/* Heading Style */
+.website-heading {
+    font-family: 'Impact', sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #008000, #FFD700, #000000);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+/* Navbar adjustments */
+.navbar-nav .nav-link {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: black;
+}
+
+.navbar-nav .dropdown-menu {
+    text-align: left;
+}
+
+/* Image styling */
+.jamaica-image {
+    max-width: 80%; /* Slightly larger */
+    margin: auto;
+    display: block;
+}
+
+/* Description Text */
+.description-text {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%; /* Ensures the text wraps */
 }

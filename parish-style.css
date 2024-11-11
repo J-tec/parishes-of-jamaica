@@ -1,30 +1,145 @@
-/* parish-style.css */
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General page layout */
 body {
-  background-color: #e6ffe6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
 }
 
-.header {
-  background-color: #87cefa;
-  padding: 20px;
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #003366;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-.header h1 {
-  font-family: 'Impact', sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  color: white;
-  background: linear-gradient(90deg, green, gold, black);
-  -webkit-background-clip: text;
-  color: transparent;
+.navbar ul {
+    list-style: none;
+    display: flex;
 }
 
-.parish-info {
-  font-size: 1.2rem;
-  color: #333;
-  padding: 20px;
+.navbar ul li {
+    margin: 0 15px;
 }
 
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.navbar ul li a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+/* Dropdown menu for parishes */
+.navbar .dropdown {
+    position: relative;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00509e;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .dropdown-content a {
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #003366;
+}
+
+/* Header styling */
+header {
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+/* Centering and styling parish images */
 .parish-image {
-  max-width: 100%;
-  height: auto;
+    max-width: 80%; /* Adjust the size as needed */
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text section styling */
+.content {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #555;
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #00509e;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #003366;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
 }
